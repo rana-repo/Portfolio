@@ -380,6 +380,54 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+#certificates {
+    position: relative;
+  }
+
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+.certificate-details {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.certificate-details:hover {
+    transform: scale(1.05);
+  }
+  
+.certificate-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+.certificate-info {
+    padding: 15px;
+  }
+
+  
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+p {
+    margin: 0;
+    color: #666;
+  }
+  
 /* CONTACT */
 
 #contact {
