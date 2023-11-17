@@ -16,6 +16,46 @@
           font-family: monospace; /* Use a monospace font for consistent spacing */
         }
       </style>
+    <style>
+      .section__text__p2 {
+        overflow: hidden;
+        border-right: 2px solid #000;
+        white-space: nowrap;
+        margin: 0;
+        font-family: monospace;
+      }
+  
+      .experience-container {
+        cursor: pointer;
+      }
+  
+      .experience-details {
+        display: none;
+        list-style-type: none; /* Remove default list styles */
+        padding-left: 0; /* Remove default left padding */
+      }
+  
+      .experience-container:hover .experience-details {
+        display: block;
+      }
+  
+      .experience-details li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+  
+      .experience-details li.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  
+      .experience-container:hover .experience-details li {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+    </style>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -196,136 +236,66 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Experience 1</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Terraform</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kubernetes</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>BASH Scripting</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git/GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Experience 2</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Prometheus</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cloud Computing</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Cloud Enginer - Distributel | Toronto, On</h2>
+          <p class="experience-sub-details">Jan 2020 - Present</p>
+          <div class="article-container"> 
+            <ul class="experience-details">
+              <li class="fade-in">• Design, develop, integrate, and implement partial and /or complete cloud and CI/CD solutions using modern configuration management tools and practices (e. g., Ansible, Terraform, Jenkins and GitHub).</li>               
+              <li class="fade-in">• Maintained Git workflows for version control (Source Code Management).</li>
+              <li class="fade-in">• Developed and maintained automated CI/CD pipelines for code deployment using Jenkins.</li>
+              <li class="fade-in">• Provisioned Servers and deployed features using Terraform/Ansible .</li>
+              <li class="fade-in">• Built and deployed Docker containers for implementing Microservice Architecture from Monolithic Architecture.</li>
+              <li class="fade-in">• Worked on different services which include AWS Lambda, EC2, Dynamo DB, ECS, EKS, S3, VPN, Cloud Watch and so on.</li>
+              <li class="fade-in">• Infrastructure Provisioning within secure VPC (Virtual Private Cloud) within AWS. Creating and maintaining EC2 to spin up and spin down instances required for application on demand (ASG). </li>
+              <li class="fade-in">• Created snapshots and Amazon machine images (AMIs) of the instances for backup and also created clone instances. </li>
+              <li class="fade-in">• Developing build and deployment pipelines using Jenkins, Maven and Dockers for Java base applications </li>
+            </ul>
+           </div> 
+        </div>
+      </div>  
+      <div class="details-container color-container">
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Cloud Enginer - Distributel | Toronto, On</h2>
+          <p class="experience-sub-details">Jan 2020 - Present</p>
+          <div class="article-container"> 
+            <ul class="experience-details">
+              <li class="fade-in">• Design, develop, integrate, and implement partial and /or complete cloud and CI/CD solutions using modern configuration management tools and practices (e. g., Ansible, Terraform, Jenkins and GitHub).</li>               
+              <li class="fade-in">• Maintained Git workflows for version control (Source Code Management).</li>
+              <li class="fade-in">• Developed and maintained automated CI/CD pipelines for code deployment using Jenkins.</li>
+              <li class="fade-in">• Provisioned Servers and deployed features using Terraform/Ansible .</li>
+              <li class="fade-in">• Built and deployed Docker containers for implementing Microservice Architecture from Monolithic Architecture.</li>
+              <li class="fade-in">• Worked on different services which include AWS Lambda, EC2, Dynamo DB, ECS, EKS, S3, VPN, Cloud Watch and so on.</li>
+              <li class="fade-in">• Infrastructure Provisioning within secure VPC (Virtual Private Cloud) within AWS. Creating and maintaining EC2 to spin up and spin down instances required for application on demand (ASG). </li>
+              <li class="fade-in">• Created snapshots and Amazon machine images (AMIs) of the instances for backup and also created clone instances. </li>
+              <li class="fade-in">• Developing build and deployment pipelines using Jenkins, Maven and Dockers for Java base applications </li>
+            </ul>
+           </div> 
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      </div>  
+      <div class="details-container color-container">
+        <div class="experience-container">
+          <h2 class="experience-sub-title">System Engineer - Tech Mahindra | Chandigarh, In</h2>
+          <p class="experience-sub-details">July 2014 - Dec 2016</p>
+          <div class="article-container">
+            <ul class="experience-details">
+              <li class="fade-in">• Manage and monitor all installed systems and infrastructure.</li>
+              <li class="fade-in">• Install, configure, test and maintain operating systems, application software and system management tools </li>
+              <li class="fade-in">• Proactively ensure the highest levels of systems and infrastructure availability.</li>
+              <li class="fade-in">• Monitor and test application performance for potential bottlenecks, identify possible solutions, and work with developers to implement those fixes </li>
+              <li class="fade-in">• Maintain security, backup, and redundancy strategies.</li>
+              <li class="fade-in">• Write and maintain custom scripts to increase system efficiency and lower the human intervention time on any tasks </li>
+              <li class="fade-in">• Participate in the design of information and operational support systems and Provided 2nd and 3rd level support </li>
+            </ul>
+          </div>  
+       </div>   
+      </div>
+    </div>
+      <!-- Additional Experience Details -->
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -456,80 +426,7 @@
         
         <!-- Add more certificate details as needed -->
       </div>
-    </section>
-   <section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-sub-title">IT Specialist</h2>
-        <p class="experience-sub-details">Eataly | Dallas, TX</p>
-        <p class="experience-sub-details">Nov 2020 - Present</p>
-        <ul class="article-container">
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Install/Maintain IT Infrastructure</h3>
-              <p>Responsible for the installation and maintenance of IT infrastructure.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Troubleshoot and Resolve</h3>
-              <p>Address and resolve IT system issues, ensuring smooth operations.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Automation Implementation</h3>
-              <p>Implemented automation using batch/PowerShell scripts for enhanced efficiency.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>AD Administrative Tasks</h3>
-              <p>Performed Active Directory administrative tasks for user management.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Security Best Practices</h3>
-              <p>Promoted security best practices through leading phishing campaigns and user education.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Collaboration and Mentorship</h3>
-              <p>Collaborated with IT team members, provided remote support, and offered technical mentorship to new team members.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Infrastructure Deployments</h3>
-              <p>Participated in infrastructure deployments for other locations.</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Documentation and Knowledge Base</h3>
-              <p>Thoroughly documented all troubleshooting steps and updated the knowledge base accordingly.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- Additional Experience Details -->
-    </div>
-  </div>
-  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-</section>
+    
 
 
     
@@ -571,4 +468,4 @@
     </footer>
     <script src="script.js"></script>
   </body>
-</html>
+</html> 
